@@ -15,12 +15,12 @@ The project demonstrates event sourcing concepts by tracking the lifecycle of pe
 
 The pet store domain includes events like:
 
-- `PetArrived` - A new pet arrives at the store
-- `PetBorn` - A pet is born to a mother already in the store
-- `PetSold` - A pet is sold to a customer
-- `PetPriceChange` - The price of a pet is updated
-- `PetLost` - A pet goes missing
-- `PetFoundAgain` - A lost pet is found
+- `PetArrivedEvent` - A new pet arrives at the store
+- `PetBornEvent` - A pet is born to a mother already in the store
+- `PetSoldEvent` - A pet is sold to a customer
+- `PetPriceChangeEvent` - The price of a pet is updated
+- `PetLostEvent` - A pet goes missing
+- `PetFoundAgainEvent` - A lost pet is found
 
 > In our little pet store, so cozy and bright,
 > We track all the moments, from morning till night.
