@@ -13,12 +13,12 @@ Inspired by [this article (german)](https://www.heise.de/blog/Event-Sourcing-Die
 
 The example implementation models a simple pet store with the following events:
 
-- `PetArrivedEvent` - A new pet arrives at the store
-- `PetBornEvent` - A pet is born to a mother already in the store
-- `PetSoldEvent` - A pet is sold to a customer
-- `PetPriceChangeEvent` - The price of a pet is updated
-- `PetLostEvent` - A pet goes missing
-- `PetFoundAgainEvent` - A lost pet is found
+- `PetArrived` - A new pet arrives at the store
+- `PetBorn` - A pet is born to a mother already in the store
+- `PetSold` - A pet is sold to a customer
+- `PetPriceChanged` - The price of a pet is updated
+- `PetLost` - A pet goes missing
+- `PetFoundAgain` - A lost pet is found
 
 > In our little pet store, so cozy and bright,
 > We track all the moments, from morning till night.
