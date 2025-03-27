@@ -20,11 +20,14 @@ func NewEvent[T any](details T, source string, version int16) Event[T] {
 	if err != nil {
 		panic(err)
 	}
-	return Event[T]{
+	e := Event[T]{
 		ID:      id,
-		Type:    getType(details),
+		Source:  source,
+		Version: version,
 		Details: details,
 	}
+	e.Type = getType(e)
+	return e
 }
 
 func getType(v any) string {
